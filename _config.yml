@@ -22,7 +22,7 @@ exclude:
   - README.md
   - node_modules/
 
-  collections:
+collections:
   posts:
     output: true
     permalink: /:collection/:path/
