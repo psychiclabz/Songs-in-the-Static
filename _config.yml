@@ -21,3 +21,12 @@ permalink: /:title/
 exclude:
   - README.md
   - node_modules/
+
+  collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Optional: If you want to keep the default blog URL structure (e.g., /2025/04/05/title/)
+# Use this instead:
+# permalink: /:year/:month/:day/:title/
