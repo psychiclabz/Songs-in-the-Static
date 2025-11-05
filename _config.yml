@@ -1,0 +1,23 @@
+# _config.yml
+title: Songs in the Static
+description: A mythological cosmology where reality is woven by song
+
+theme: minima  # GitHub Pages default theme — simple and clean
+markdown: kramdown
+
+# Custom settings for your mythos
+author: Your Name
+email: your-email@example.com  # optional
+
+# Enable plugins GitHub Pages supports
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks for clean URLs (optional)
+permalink: /:title/
+
+# Exclude files you don't want published
+exclude:
+  - README.md
+  - node_modules/

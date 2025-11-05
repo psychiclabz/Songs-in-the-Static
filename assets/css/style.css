@@ -1,0 +1,33 @@
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Palatino', serif;
+  color: #2c3e50;
+}
+
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #555;
+}
+
+code {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+.footer {
+  margin-top: 4rem;
+  text-align: center;
+  color: #7f8c8d;
+}
