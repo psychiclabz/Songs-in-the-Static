@@ -1,6 +1,6 @@
 # _config.yml
 title: Songs in the Static
-description: A mythological cosmology where reality is woven by song
+description: Static in the Songs
 
 theme: minima  # GitHub Pages default theme — simple and clean
 markdown: kramdown
