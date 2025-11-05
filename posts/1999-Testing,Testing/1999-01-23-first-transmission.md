@@ -1,3 +1,10 @@
+---
+layout: default
+title: First Transmission
+date: 1999-01-23
+category: archive
+---
+
 Anyone one else hearing the voices in the dial-up sounds?
 i was sitting at my desk and my modem started screeching like normal...
 then i heard it, like a song? or a voice?

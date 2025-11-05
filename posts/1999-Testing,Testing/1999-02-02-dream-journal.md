@@ -1,3 +1,10 @@
+---
+layout: default
+title: Dream journal?
+date: 1999-02-02
+category: archive
+---
+
 I had a dream, a strange dream.
 I need to write this down before I forget. Before it fades like dreams do.
 But this one... this one isn't fading.

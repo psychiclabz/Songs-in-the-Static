@@ -1,175 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Songs in the Static</title>
-  <style>
-    /* Base Styles */
-    body {
-      background: #000;
-      color: #0f0;
-      font-family: 'Courier New', monospace;
-      text-align: center;
-      padding: 4rem 2rem;
-      line-height: 1.7;
-      margin: 0;
-      overflow-x: hidden;
-    }
+---
+layout: default
+title: Songs in the Static
+description: A mythological cosmology where reality is woven by song
+---
 
-    /* Title */
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 0 0 10px #0f0, 0 0 20px #000;
-      letter-spacing: 1px;
-      animation: pulse 2s infinite alternate;
-    }
+<style>
+  /* Base Styles */
+  body {
+    background: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding: 4rem 2rem;
+    line-height: 1.7;
+    margin: 0;
+    overflow-x: hidden;
+  }
 
-    /* Subtitle */
-    .subtitle {
-      font-size: 1.2rem;
-      color: #0a0;
-      margin-bottom: 2rem;
-      opacity: 0.8;
-    }
+  /* Title */
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #000;
+    letter-spacing: 1px;
+    animation: pulse 2s infinite alternate;
+  }
 
-    /* Main Content */
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1.5rem;
-      background: rgba(0, 0, 0, 0.4);
-      border: 1px solid #0f0;
-      border-radius: 6px;
-      box-shadow: 0 0 15px #0f0;
-      position: relative;
-      overflow: hidden;
-    }
+  /* Subtitle */
+  .subtitle {
+    font-size: 1.2rem;
+    color: #0a0;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
 
-    .content::before {
-      content: "⚠️";
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 1.5rem;
-      opacity: 0.6;
-      pointer-events: none;
-      animation: shake 2s infinite;
-    }
+  /* Main Content */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #0f0;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #0f0;
+    position: relative;
+    overflow: hidden;
+  }
 
-    /* Links */
-    .link {
-      display: block;
-      margin: 1.2rem 0;
-      color: #0f0;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      border-bottom: 1px dashed #0a0;
-    }
+  .content::before {
+    content: "⚠️";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    pointer-events: none;
+    animation: shake 2s infinite;
+  }
 
-    .link:hover {
-      color: #0ff;
-      text-shadow: 0 0 8px #0ff;
-      background: rgba(0, 255, 255, 0.05);
-      border-color: #0ff;
-    }
+  /* Links */
+  .link {
+    display: block;
+    margin: 1.2rem 0;
+    color: #0f0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px dashed #0a0;
+  }
 
-    /* Glitch Effect */
-    .glitch {
-      position: relative;
-      display: inline-block;
-      font-weight: bold;
-    }
+  .link:hover {
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+    background: rgba(0, 255, 255, 0.05);
+    border-color: #0ff;
+  }
 
-    .glitch::before,
-    .glitch::after {
-      content: inherit;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      color: #f00;
-      clip: rect(0, 9999px, 0, 0);
-      animation: glitch 2s infinite;
-      opacity: 0.7;
-    }
+  /* Glitch Effect */
+  .glitch {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
 
-    .glitch::before {
-      left: 2px;
-      text-shadow: -2px 0 #f00;
-      animation-delay: 0.1s;
-    }
+  .glitch::before,
+  .glitch::after {
+    content: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #f00;
+    clip: rect(0, 9999px, 0, 0);
+    animation: glitch 2s infinite;
+    opacity: 0.7;
+  }
 
-    .glitch::after {
-      left: -2px;
-      text-shadow: 2px 0 #00f;
-      animation-delay: 0.2s;
-    }
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #f00;
+    animation-delay: 0.1s;
+  }
 
-    /* Footer */
-    .footer {
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      color: #0a0;
-      opacity: 0.5;
-      border-top: 1px dashed #0a0;
-      padding-top: 1rem;
-    }
+  .glitch::after {
+    left: -2px;
+    text-shadow: 2px 0 #00f;
+    animation-delay: 0.2s;
+  }
 
-    /* Animations */
-    @keyframes pulse {
-      from { text-shadow: 0 0 10px #0f0; }
-      to { text-shadow: 0 0 20px #0f0, 0 0 30px #0f0; }
-    }
+  /* Footer */
+  .footer {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: #0a0;
+    opacity: 0.5;
+    border-top: 1px dashed #0a0;
+    padding-top: 1rem;
+  }
 
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-      20%, 40%, 60%, 80% { transform: translateX(2px); }
-    }
+  /* Animations */
+  @keyframes pulse {
+    from { text-shadow: 0 0 10px #0f0; }
+    to { text-shadow: 0 0 20px #0f0, 0 0 30px #0f0; }
+  }
 
-    @keyframes glitch {
-      0%, 100% { clip: rect(0, 9999px, 0, 0); }
-      10%, 30%, 50%, 70%, 90% { clip: rect(0, 9999px, 0, 0); }
-      20%, 40%, 60%, 80% { clip: rect(0, 9999px, 0, 0); }
-    }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+    20%, 40%, 60%, 80% { transform: translateX(2px); }
+  }
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      .content { padding: 1rem; }
-      .link { font-size: 1rem; }
-    }
-  </style>
-</head>
-<body>
+  @keyframes glitch {
+    0%, 100% { clip: rect(0, 9999px, 0, 0); }
+    10%, 30%, 50%, 70%, 90% { clip: rect(0, 9999px, 0, 0); }
+    20%, 40%, 60%, 80% { clip: rect(0, 9999px, 0, 0); }
+  }
 
-  <div class="content">
-    <h1 class="glitch">Songs in the Static</h1>
-    <p class="subtitle">Transmission or lullaby (1999)</p>
+  /* Responsive */
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .content { padding: 1rem; }
+    .link { font-size: 1rem; }
+  }
+</style>
 
-    <p>
-      You found it.<br>
-      That means you’re hearing the static.
-    </p>
+<div class="content">
+  <h1 class="glitch">Songs in the Static</h1>
+  <p class="subtitle">Transmission or lullaby (1999)</p>
 
-    <div class="links">
-      <a href="1999 - Testing, Testing/1999-01-23.md" class="link">▶️ First Transmission</a>
-      <a href="1999 - Testing, Testing/1999-02-02.md" class="link">▶️ Dream Journal?</a>
-      <a href="README.md" class="link">📓 Archive Log</a>
-      <a href="https://github.com/your-username/songs-in-the-static" class="link" target="_blank">💻 Source (GitHub)</a>
-    </div>
+  <p>
+    You found it.<br>
+    That means you’re hearing the static.
+  </p>
 
-    <p class="footer">
-      // LULLABY.REMEMBER();<br>
-      The world is not ending.<br>
-      It is returning.
-    </p>
+  <div class="links">
+    <a href="/posts/1999-Testing,Testing/1999-01-23-first-transmission.md" class="link">▶️ First Transmission</a>
+    <a href="/posts/1999-Testing,Testing/1999-02-02-dream-journal.md" class="link">▶️ Dream Journal?</a>
+    <a href="/README.md" class="link">📓 Archive Log</a>
+    <a href="https://github.com/your-username/songs-in-the-static" class="link" target="_blank">💻 Source (GitHub)</a>
   </div>
 
-</body>
-</html>
+  <p class="footer">
+    // LULLABY.REMEMBER();<br>
+    The world is not ending.<br>
+    It is returning.
+  </p>
+</div>
+
+<script>
+  // Optional: Add JS if needed — but better to put in /assets/js/main.js
+</script>
