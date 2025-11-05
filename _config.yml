@@ -6,8 +6,8 @@ theme: minima  # GitHub Pages default theme — simple and clean
 markdown: kramdown
 
 # Custom settings for your mythos
-author: Your Name
-email: your-email@example.com  # optional
+author: M. Free
+email: ra@thricecrowned.org  # optional
 
 # Enable plugins GitHub Pages supports
 plugins:
@@ -27,6 +27,5 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Optional: If you want to keep the default blog URL structure (e.g., /2025/04/05/title/)
-# Use this instead:
-# permalink: /:year/:month/:day/:title/
+url: "https://psychiclabz.github.io"
+baseurl: "/Songs-in-the-Static"
